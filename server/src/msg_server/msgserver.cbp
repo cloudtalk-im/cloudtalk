@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="msgserver" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="msg_server">
+         <Option output="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/msg_server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="./" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_REENTRANT" />
+            <Add option="-D_FILE_OFFSET_BITS=64" />
+            <Add option="-DAC_HAS_INFO" />
+            <Add option="-DAC_HAS_WARNING" />
+            <Add option="-DAC_HAS_ERROR" />
+            <Add option="-DAC_HAS_CRITICAL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DAC_HAS_DEBUG" />
+            <Add option="-DLINUX_DAEMON" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/." />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base/pb" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base/pb/protocol" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base/security" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 msg_server" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="msg_server/fast">
+         <Option output="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/msg_server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="./" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_REENTRANT" />
+            <Add option="-D_FILE_OFFSET_BITS=64" />
+            <Add option="-DAC_HAS_INFO" />
+            <Add option="-DAC_HAS_WARNING" />
+            <Add option="-DAC_HAS_ERROR" />
+            <Add option="-DAC_HAS_CRITICAL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DAC_HAS_DEBUG" />
+            <Add option="-DLINUX_DAEMON" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/." />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base/pb" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base/pb/protocol" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/../base/security" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 msg_server/fast" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/AttachData.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/DBServConn.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/FileHandler.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/FileServConn.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/GroupChat.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/ImUser.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/MsgConn.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/PushServConn.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/RouteServConn.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/jsonxx.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/msg_server.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/AttachData.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/DBServConn.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/FileHandler.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/FileServConn.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/GroupChat.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/ImUser.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/MsgConn.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/PushServConn.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/RouteServConn.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/jsonxx.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/msg_server/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
