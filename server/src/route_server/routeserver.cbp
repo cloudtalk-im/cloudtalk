@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="routeserver" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="route_server">
+         <Option output="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/route_server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="./" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_REENTRANT" />
+            <Add option="-D_FILE_OFFSET_BITS=64" />
+            <Add option="-DAC_HAS_INFO" />
+            <Add option="-DAC_HAS_WARNING" />
+            <Add option="-DAC_HAS_ERROR" />
+            <Add option="-DAC_HAS_CRITICAL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DAC_HAS_DEBUG" />
+            <Add option="-DLINUX_DAEMON" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/." />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base/jsoncpp" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base/pb" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base/pb/protocol" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 route_server" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="route_server/fast">
+         <Option output="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/route_server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="./" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_REENTRANT" />
+            <Add option="-D_FILE_OFFSET_BITS=64" />
+            <Add option="-DAC_HAS_INFO" />
+            <Add option="-DAC_HAS_WARNING" />
+            <Add option="-DAC_HAS_ERROR" />
+            <Add option="-DAC_HAS_CRITICAL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DAC_HAS_DEBUG" />
+            <Add option="-DLINUX_DAEMON" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/." />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base/jsoncpp" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base/pb" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/../base/pb/protocol" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 route_server/fast" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/RouteConn.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/UserInfo.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/route_server.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/RouteConn.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/UserInfo.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/route_server/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
