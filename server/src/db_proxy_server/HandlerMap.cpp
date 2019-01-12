@@ -38,7 +38,6 @@ CHandlerMap::CHandlerMap()
  */
 CHandlerMap::~CHandlerMap()
 {
-
 }
 
 /**
