@@ -1,0 +1,10 @@
+package IM.Other;
+option java_package = "com.zhangwuji.im.protobuf";
+option optimize_for = LITE_RUNTIME;
+
+//service id: 0x0007
+
+message IMHeartBeat{
+	//cmd id:  		0x0701
+}
+
