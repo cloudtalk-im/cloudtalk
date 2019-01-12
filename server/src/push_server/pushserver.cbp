@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="pushserver" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="push_server">
+         <Option output="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="./" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_REENTRANT" />
+            <Add option="-D_FILE_OFFSET_BITS=64" />
+            <Add option="-DAC_HAS_INFO" />
+            <Add option="-DAC_HAS_WARNING" />
+            <Add option="-DAC_HAS_ERROR" />
+            <Add option="-DAC_HAS_CRITICAL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DAC_HAS_DEBUG" />
+            <Add option="-DLINUX_DAEMON" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/." />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/../base/pb" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/../base/pb/protocol" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/../base/slog" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 push_server" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="push_server/fast">
+         <Option output="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="./" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_REENTRANT" />
+            <Add option="-D_FILE_OFFSET_BITS=64" />
+            <Add option="-DAC_HAS_INFO" />
+            <Add option="-DAC_HAS_WARNING" />
+            <Add option="-DAC_HAS_ERROR" />
+            <Add option="-DAC_HAS_CRITICAL" />
+            <Add option="-DTIXML_USE_STL" />
+            <Add option="-DAC_HAS_DEBUG" />
+            <Add option="-DLINUX_DAEMON" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/." />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/../base/pb" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/../base/pb/protocol" />
+            <Add directory="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/../base/slog" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 push_server/fast" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/bin/gmake -f &quot;/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.BaseDefine.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.Buddy.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.File.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.Group.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.Login.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.Message.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.Other.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.Server.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/base/pb/protocol/IM.SwitchService.pb.cc">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/ConfigFileReader.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_client.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_client_handler.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_feedback_handler.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_msg.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/byte_stream.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/jsonxx.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/main.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/pdu_msg.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_app.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_server.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_server_handler.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_session.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_session_handler.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/session_manager.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/base_io_stream.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/epoll_io_loop.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/io_loop.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/ssl_client_async.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/tcp_client_async.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/tcp_server.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/tcp_session_async.cpp">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/ConfigFileReader.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_client.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_client_handler.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_feedback_handler.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/apns_msg.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/byte_stream.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/jsonxx.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/pdu_msg.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_app.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_server.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_server_handler.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_session.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/push_session_handler.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/session_manager.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/base_io_stream.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/epoll_io_loop.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/io_loop.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/ssl_client_async.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/tcp_client_async.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/tcp_server.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/socket/tcp_session_async.h">
+      </Unit>
+      <Unit filename="/media/psf/Home/Documents/TeamTalk-master/server/src/push_server/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
