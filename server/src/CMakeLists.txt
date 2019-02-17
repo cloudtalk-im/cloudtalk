@@ -342,6 +342,5 @@ add_executable(src
         test/test_client.cpp
         tools/daeml.cpp
         build.sh
-        build_ubuntu.sh
         make_hiredis.sh
         make_log4cxx.sh)
