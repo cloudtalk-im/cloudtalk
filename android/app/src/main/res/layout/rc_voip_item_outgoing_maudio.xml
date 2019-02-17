@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262e42">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/rc_voip_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/rc_voip_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:src="@drawable/rc_voip_icon_add"
+            android:layout_gravity="right|center_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/rc_voip_minimize"
+            android:src="@drawable/rc_voip_minimize"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:id="@+id/rc_voip_time"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!--<io.rong.callkit.CallUserGridView-->
+        <!--android:id="@+id/rc_voip_members_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="130dp"-->
+        <!--android:layout_marginBottom="70dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:scrollbars="none"-->
+        <!--android:gravity="center"-->
+        <!--android:listSelector="@android:color/transparent"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_above="@+id/rc_voip_control_layout">-->
+
+    <!--</io.rong.callkit.CallUserGridView>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/rc_voip_call_waiting"
+        android:id="@+id/rc_voip_remind"
+        android:layout_above="@+id/rc_voip_control_layout"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    <FrameLayout
+        android:id="@+id/rc_voip_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebebeb"
+    android:id="@+id/main_container"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:paddingBottom="1dp"
+            android:transcriptMode="normal"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrOverScroll="false" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="新消息"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/tt_new_msg_tip"
+            android:layout_gravity="right|bottom"
+            android:gravity="center_vertical|left"
+            android:visibility="gone"
+            android:textColor="#01aff4"
+            android:background="@drawable/tt_new_msg_bk"
+            />
+
+        </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tt_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <RelativeLayout
+            android:id="@+id/pannel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tt_pannel_bk"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="7dp" >
+
+            <com.melink.bqmmsdk.widget.BQMMEditView
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/rc_edit_text_background_selector"
+                android:maxLines="4"
+                android:minHeight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="16sp"
+                android:scrollbarStyle="outsideInset"
+                />
+
+            
+            <ImageView
+                android:id="@+id/voice_btn"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rc_audio_toggle" />
+            
+            <ImageView
+                android:id="@+id/show_keyboard_btn"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rc_keyboard_selector"
+                android:visibility="gone" />
+            
+            <ImageView
+                android:id="@+id/show_add_photo_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rc_ext_plugin_toggle" />
+            
+            <ImageView
+                android:id="@+id/show_emo_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rc_emotion_toggle_selector" />
+
+            <TextView
+                android:id="@+id/send_message_btn"
+                android:layout_width="45dp"
+                android:layout_height="31dp"
+                android:layout_alignBottom="@id/voice_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/tt_send_btn_bg"
+                android:gravity="center"
+                android:text="@string/send_message"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />            
+
+            <Button
+                android:id="@+id/record_voice_btn"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignBottom="@id/message_text"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@id/show_emo_btn"
+                android:layout_toRightOf="@id/show_keyboard_btn"
+                android:background="@drawable/tt_panel_voice_forward"
+                android:gravity="center"
+                android:text="@string/tip_for_voice_forward"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbox_buttom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_below="@id/pannel_container"
+            android:background="#fff6f6f6"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/emo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff6f6f6"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.melink.bqmmsdk.ui.keyboard.BQMMKeyboard
+                    android:id="@+id/bqmm_keyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="259dp" />
+
+                <com.melink.bqmmsdk.widget.BQMMSendButton
+                    android:id="@+id/btn_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_others_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rc_emoji_grid_item_bg"
+                android:visibility="gone"
+                android:layout_gravity="top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/take_camera_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/tt_take_camera_btn_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/take_camera_btn_text"
+                        android:textColor="@color/default_light_black_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/take_photo_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/rc_ext_plugin_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/take_photo_btn_text"
+                        android:textColor="@color/default_light_black_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/send_audo_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/rc_ic_phone_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/audo_btn_text"
+                        android:textColor="@color/default_light_black_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="55dp"
+                    android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/video_btn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/rc_voip_icon_input_video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/video_btn_text"
+                    android:textColor="@color/default_light_black_color"
+                    android:textSize="13sp" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:visibility="gone"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/location_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/rc_ic_location_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/video_btn_text"
+                        android:textColor="@color/default_light_black_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>>
+
+    </RelativeLayout>
+
+</LinearLayout>

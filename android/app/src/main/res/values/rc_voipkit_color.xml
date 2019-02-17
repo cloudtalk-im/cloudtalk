@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rc_voip_background_color">#262e42</color>
+    <color name="rc_voip_check_disable">#1f4a76</color>
+    <color name="rc_voip_check_enable">#0099ff</color>
+    <color name="rc_voice_color">#0195ff</color>
+    <color name="rc_text_color_primary">#353535</color>
+    <color name="rc_text_color_secondary">#999999</color>
+    <color name="rc_text_color_tertiary">#d7d7d7</color>
+    <color name="rc_text_color_primary_inverse">@android:color/white</color>
+</resources>

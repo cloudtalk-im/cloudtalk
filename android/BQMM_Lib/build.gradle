@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+  //  compile 'com.android.support:support-v4:+'
+}
+
+android {
+    compileSdkVersion 28
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+    }
+}

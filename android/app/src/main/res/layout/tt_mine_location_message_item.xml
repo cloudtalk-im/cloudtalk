@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangwuji.im.ui.plugin.message.LocationRenderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp">
+
+    <com.zhangwuji.im.ui.widget.IMBaseImageView
+        android:id="@+id/user_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tt_default_user_portrait_corner" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:text="小明"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user_portrait"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/user_portrait" >
+
+        <ImageView
+            android:id="@+id/message_state_failed"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/message_image_desc"
+            android:src="@drawable/tt_msg_tip"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+
+        <com.zhangwuji.im.ui.widget.CTMessageFrameLayout
+            android:id="@+id/message_layout"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rc_ic_bubble_no_right"
+            android:layout_toRightOf="@id/message_state_failed">
+
+            <com.zhangwuji.im.ui.widget.BubbleImageView
+                android:id="@+id/rc_img"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                app:RCMask="true"
+                app:RCDefDrawable="@drawable/rc_ic_location_item_default" />
+
+            <TextView
+                android:id="@+id/rc_content"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|left"
+                android:background="@drawable/rc_corner_location_style"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:textSize="14sp" />
+
+            <com.zhangwuji.im.ui.widget.MGProgressbar
+                android:id="@+id/tt_image_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerCrop" />
+
+
+        </com.zhangwuji.im.ui.widget.CTMessageFrameLayout>
+    </FrameLayout>
+
+
+
+</com.zhangwuji.im.ui.plugin.message.LocationRenderView>
