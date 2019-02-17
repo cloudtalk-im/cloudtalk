@@ -30,5 +30,4 @@ function restart() {
     fi
 }
 
-
 restart $1 $2

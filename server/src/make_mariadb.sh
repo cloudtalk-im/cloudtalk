@@ -1,22 +1,11 @@
 #!/bin/bash
-# author: luoning
-# date: 03/24/2015
-
-MARIADB_DEVEL=MariaDB-10.0.17-centos6-x86_64-devel
-MARIADB_DEVEL_DOWNLOAD_PATH=http://sfo1.mirrors.digitalocean.com/mariadb/mariadb-10.0.17/yum/centos6-amd64/rpms/$MARIADB_DEVEL.rpm
-MARIADB_COMMON=MariaDB-10.0.17-centos6-x86_64-common
-MARIADB_COMMON_DOWNLOAD_PATH=http://sfo1.mirrors.digitalocean.com/mariadb/mariadb-10.0.17/yum/centos6-amd64/rpms/$MARIADB_COMMON.rpm
-MARIADB_COMPAT=MariaDB-10.0.17-centos6-x86_64-compat
-MARIADB_COMPAT_DOWNLOAD_PATH=http://sfo1.mirrors.digitalocean.com/mariadb/mariadb-10.0.17/yum/centos6-amd64/rpms/$MARIADB_COMPAT.rpm
 CUR_DIR=
-
 check_user() {
     if [ $(id -u) != "0" ]; then
         echo "Error: You must be root to run this script, please use root to install im"
         exit 1
     fi
 }
-
 get_cur_dir() {
     # Get the fully qualified path to the script
     case $0 in
@@ -66,21 +55,6 @@ get_cur_dir() {
     CUR_DIR=$(dirname "${REALPATH}")
 }
 
-download() {
-    if [ -f "$1" ]; then
-        echo "$1 existed."
-    else
-        echo "$1 not existed, begin to download..."
-        wget $2
-        if [ $? -eq 0 ]; then
-            echo "download $1 successed";
-        else
-            echo "Error: download $1 failed";
-            return 1;
-        fi
-    fi
-    return 0
-}
 
 build_mariadb_devel(){
     CENTOS_VERSION=$(less /etc/redhat-release)
@@ -88,37 +62,8 @@ build_mariadb_devel(){
     if [[ $CENTOS_VERSION =~ "7.0" ]]; then
         yum -y install mariadb-devel
     else
-        download $MARIADB_DEVEL.rpm $MARIADB_DEVEL_DOWNLOAD_PATH
-        if [ $? -eq 1 ]; then
-            return 1
-        fi
-
-        download $MARIADB_COMMON.rpm $MARIADB_COMMON_DOWNLOAD_PATH
-        if [ $? -eq 1 ]; then
-            return 1
-        fi
-
-        download $MARIADB_COMPAT.rpm $MARIADB_COMPAT_DOWNLOAD_PATH
-        if [ $? -eq 1 ]; then
-            return 1
-        fi
-
-        yum -y install openssl-devel
-
-
-        rpm -ivh MariaDB-*
-        RET=$?
-        if [ $RET -eq 0 ]; then
-            echo "install mariadb-devel successed";
-        elif [ $RET -eq 3 ]; then
-            echo "mariadb-devel has installed";
-        else
-            echo "Error: install mariadb-devel failed";
-            return 1;
-        fi
+        echo "centos version must >=7.0 !!!"
     fi
-
-    
 }
 
 check_user

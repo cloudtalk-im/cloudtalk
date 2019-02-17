@@ -1,6 +1,4 @@
 #!/bin/bash
-# author: luoning
-# date: 03/24/2015
 
 cp -a ./lib/log4cxx.properties ./route_server/
 cp -a ./lib/libslog.so  ./route_server/

@@ -1,6 +1,4 @@
 #!/bin/bash
-# author: luoning
-# date: 03/25/2015
 
 PROTOBUF=protobuf-3.6.1
 CUR_DIR=

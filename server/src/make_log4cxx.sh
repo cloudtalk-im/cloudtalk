@@ -1,6 +1,4 @@
 #!/bin/bash
-# author: luoning
-# date: 03/24/2015
 
 LOG4CXX=apache-log4cxx-0.10.0
 LOG4CXX_PATH=http://mirror.bit.edu.cn/apache/logging/log4cxx/0.10.0/$LOG4CXX.tar.gz
@@ -81,7 +79,7 @@ build_log4cxx(){
     yum -y install apr-devel
     yum -y install apr-util-devel
     cd log4cxx
-    download $LOG4CXX.tar.gz $LOG4CXX_PATH
+ #  download $LOG4CXX.tar.gz $LOG4CXX_PATH
     tar -xf $LOG4CXX.tar.gz
     cd $LOG4CXX
     ./configure --prefix=$CUR_DIR/log4cxx --with-apr=/usr --with-apr-util=/usr --with-charset=utf-8 --with-logchar=utf-8
