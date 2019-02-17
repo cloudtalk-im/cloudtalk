@@ -6,6 +6,9 @@
 
 项目详细编译文档与安装文档正在准备中，预计三月初出来。有兴趣的请进群关注.
 
+cloudtalk android 测试包: https://github.com/cloudtalk-im/cloudtalk/releases/tag/1.0
+
+
 #### 软件架构
 ![架构草图](https://images.gitee.com/uploads/images/2019/0103/094012_5bf53aa1_494527.png "imnew.png")
 
